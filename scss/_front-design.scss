@@ -1,20 +1,35 @@
 @import 'variable';
-.content_develop {
+.content_develop_front {
   grid-area: c;
-  display: flex;
-  justify-content: space-between;
-  background: grey;
-  &_front {
-    width: 30%;
-    background-color: white;
-
-  }
-  &_design {
-    width: 30%;
-    background-color: white;
-   
-  }
-  div {
-    border-radius: $raduis;
+  background-color: white;
+  border-radius: $raduis;
+  height: 50%;
+  ul  li {
+    padding-left: 1rem blue solide;
+    label {
+      margin-left: 2rem;
+      font-size: 1rem;
   }
 }
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    progress {
+      margin-right: 2rem;
+    }
+  }
+
+  
+  }
+  .content_develop_design {
+    grid-area: e;
+    background-color: white;
+    border-radius: $raduis;
+    height: 50%;
+      label {
+        padding-right: 10px;
+        font-size: 1rem;
+    }
+   
+  }

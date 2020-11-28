@@ -2,6 +2,12 @@
 
 .content_blog {
   grid-area: k;
+  &_head {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 12px;
+  }
   article {
     border-radius: $raduis;
     display: flex;
@@ -13,12 +19,10 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
-
       aside , p {
         margin: 0;
       } 
     }
-
   }
   img {
     margin: 1rem;

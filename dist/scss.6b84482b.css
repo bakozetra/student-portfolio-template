@@ -3,7 +3,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-areas: "a c c" "d f f" "g k k";
+  grid-template-areas: "a c e" "d f f" "g k k";
   gap: 2rem;
 }
 
@@ -13,6 +13,10 @@ article {
 
 li {
   list-style: none;
+}
+
+ul {
+  padding: 0;
 }
 
 body {
@@ -44,27 +48,49 @@ img {
   width: 70%;
 }
 
-.content_develop {
+.content_develop_front {
   grid-area: c;
+  background-color: white;
+  border-radius: 12px;
+  height: 50%;
+}
+.content_develop_front ul li {
+  padding-left: 1rem blue solide;
+}
+.content_develop_front ul li label {
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+.content_develop_front li {
   display: flex;
   justify-content: space-between;
-  background: grey;
+  padding-bottom: 1rem;
 }
-.content_develop_front {
-  width: 30%;
-  background-color: white;
+.content_develop_front li progress {
+  margin-right: 2rem;
 }
+
 .content_develop_design {
-  width: 30%;
+  grid-area: e;
   background-color: white;
-}
-.content_develop div {
   border-radius: 12px;
+  height: 50%;
+}
+.content_develop_design label {
+  padding-right: 10px;
+  font-size: 1rem;
 }
 
 .content_project {
+  margin-top: -10rem;
   grid-area: f;
   background: grey;
+}
+.content_project_head {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 12px;
 }
 .content_project article {
   background-color: white;
@@ -78,19 +104,28 @@ img {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
 }
 .content_project article aside p, .content_project article aside h2, .content_project article aside div {
   margin: 0;
 }
+.content_project article aside button {
+  margin-bottom: 2rem;
+}
 .content_project img {
-  width: 90%;
-  margin-left: 1rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
+  width: 40%;
+  margin: 1rem;
+  border-radius: 12px;
 }
 
 .content_blog {
   grid-area: k;
+}
+.content_blog_head {
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: 12px;
 }
 .content_blog article {
   border-radius: 12px;
@@ -116,6 +151,18 @@ img {
 
 .content_experience {
   grid-area: d;
+  border-radius: 12px;
+}
+
+.content_hoobies {
+  grid-area: g;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content_hoobies img {
+  width: 90%;
+  margin: 1rem;
   border-radius: 12px;
 }
 

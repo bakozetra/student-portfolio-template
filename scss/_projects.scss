@@ -1,15 +1,13 @@
 @import 'variable';
 .content_project {
+  margin-top: -10rem;
   grid-area: f;
   background: grey;
-  &_blog {
-   
-  }
-  &_gallery {
-
-  }
-  &_checkout {
-
+  &_head {
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 12px;
   }
   article {
     background-color: white;
@@ -23,16 +21,19 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
+      width: 100%;
     p, h2 , div {
       margin: 0;
     } 
+    button {
+      margin-bottom: 2rem;
+    }
 
     }
   }
   img {
-    width: 90%;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    width: 40%;
+    margin: 1rem;
+    border-radius: 12px;
   }
 }

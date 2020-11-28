@@ -4,7 +4,7 @@ main {
  margin-right: auto;
  display: grid;
  grid-template-areas: 
- "a c c"
+ "a c e"
  "d f f"
  "g k k";
  gap: 2rem;
@@ -15,4 +15,7 @@ article {
 }
 li {
   list-style: none;
+}
+ul {
+  padding: 0;
 }
