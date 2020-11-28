@@ -1,0 +1,18 @@
+.content_about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: 18px;
+  img {
+    width:90%;
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  p , small , h3 {
+    margin-left: 1rem;
+  } 
+  p {
+    width: 70%;
+  }
+}

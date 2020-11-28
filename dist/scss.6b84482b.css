@@ -1,0 +1,122 @@
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-areas: "a c c" "d f f" "g k k";
+  gap: 2rem;
+}
+
+article {
+  background: #FFFFFF;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: grey;
+}
+
+img {
+  width: 100%;
+}
+
+.content_about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  font-size: 18px;
+}
+.content_about img {
+  width: 90%;
+  margin: 1rem;
+  border-radius: 12px;
+}
+.content_about p, .content_about small, .content_about h3 {
+  margin-left: 1rem;
+}
+.content_about p {
+  width: 70%;
+}
+
+.content_develop {
+  grid-area: c;
+  display: flex;
+  justify-content: space-between;
+  background: grey;
+}
+.content_develop_front {
+  width: 30%;
+  background-color: white;
+}
+.content_develop_design {
+  width: 30%;
+  background-color: white;
+}
+.content_develop div {
+  border-radius: 12px;
+}
+
+.content_project {
+  grid-area: f;
+  background: grey;
+}
+.content_project article {
+  background-color: white;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.content_project article aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.content_project article aside p, .content_project article aside h2, .content_project article aside div {
+  margin: 0;
+}
+.content_project img {
+  width: 90%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.content_blog {
+  grid-area: k;
+}
+.content_blog article {
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.content_blog article div {
+  width: 50%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.content_blog article div aside, .content_blog article div p {
+  margin: 0;
+}
+.content_blog img {
+  margin: 1rem;
+  width: 50%;
+  border-radius: 12px;
+}
+
+.content_experience {
+  grid-area: d;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */

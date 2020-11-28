@@ -1,0 +1,20 @@
+@import 'variable';
+.content_develop {
+  grid-area: c;
+  display: flex;
+  justify-content: space-between;
+  background: grey;
+  &_front {
+    width: 30%;
+    background-color: white;
+
+  }
+  &_design {
+    width: 30%;
+    background-color: white;
+   
+  }
+  div {
+    border-radius: $raduis;
+  }
+}
